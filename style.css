@@ -1,0 +1,9 @@
+#video {
+    width: 1024px; 
+    height:768px;
+}
+
+
+main > .container {
+    padding: 60px 15px 0;
+  }
