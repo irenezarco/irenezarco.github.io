@@ -7,3 +7,45 @@
 main > .container {
     padding: 60px 15px 0;
   }
+
+ body {
+    margin: 40px;
+  }
+  
+  .wrapper {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: [col1-start] auto  [col2-start] Auto  [col3-start] Auto [col3-end];
+      grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+      background-color: #fff;
+      color: rgb(188, 185, 185);
+    }
+  
+    .box {
+      background-color: rgb(226, 224, 224);
+      color: rgb(68, 67, 67);
+      border-radius: 5px;
+      padding: 20px;
+      font-size: 150%;
+  
+    }
+  
+    .a {
+      grid-column: col1-start / col3-start;
+      grid-row: row1-start ;
+    }
+    .b {
+      grid-column: col3-start ;
+      grid-row: row1-start / row2-end;
+    }
+    .c {
+      grid-column: col1-start;
+      grid-row: row2-start ;
+    }
+    .d {
+      grid-column: col2-start ;
+      grid-row: row2-start ;
+    }
+  
+  
+  
